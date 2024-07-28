@@ -108,7 +108,7 @@ function App() {
             <div className='pl-40 pt-14'>
               <div className='flex flex-col p-10 text-left max-w-96 rounded-3xl bg-opacity-70 bg-slate-700 shadow-lg'>
                 <span className='bowlby-one-sc-regular text-6xl m-auto text-white'>
-                  LocoBroko
+                  LocoBroko test commit
                 </span>
                 <span className='text-wrap text-gray-400 my-6'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
