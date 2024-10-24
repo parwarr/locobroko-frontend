@@ -64,7 +64,6 @@ function Stats() {
                         key={index}
                         className="relative p-6 rounded-lg shadow-lg text-white text-center bg-opacity-70"
                     >
-                        
                         <img
                             src={stat.imageSrc}
                             alt={stat.title}
@@ -72,24 +71,24 @@ function Stats() {
                         />
                         
                         <div
-                            className={`absolute inset-0 flex flex-col justify-center items-center p-6 rounded-3xl `}
+                            className={`absolute inset-0 flex flex-col justify-center items-center p-6 rounded-3xl`}
                             style={{
-                                background: 'rgba(0, 0, 0, 0.3)',  
+                                background: 'rgba(0, 0, 0, 0.3)', 
                                 padding: '10px',
                             }}
                         >
                             <h3
-                                className={`font-bold text-white text-center text-3xl mt-14`}
+                                className="text-white text-center text-4xl mt-14 font-extrabold"
                                 style={{
-                                    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)', 
+                                    textShadow: '4px 4px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000', 
                                 }}
                             >
                                 {stat.title}
                             </h3>
                             <p
-                                className={`mt-2 text-lg text-white`}
+                                className="mt-2 text-2xl text-white"
                                 style={{
-                                    textShadow: '1px 1px 3px rgba(0, 0, 0, 0.6)',  
+                                    textShadow: '2px 2px 3px rgba(0, 0, 0, 0.6)',  
                                 }}
                             >
                                 {stat.description}
