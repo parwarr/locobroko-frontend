@@ -3,19 +3,14 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Plx from 'react-plx';
 import ServerAddress from './components/ServerAddress/ServerAddress';
+import Stats from './components/Stats/Stats';
 
 function App() {
   return (
-    <div>
-      <Header />
+    <div className="flex flex-col min-h-screen">
+      {/* <Header /> */}
 
-      <div
-        style={{
-          position: 'relative',
-          height: '100vh',
-          overflow: 'hidden',
-        }}
-      >
+      <div className="relative h-[100vh] overflow-hidden">
         <Plx
           parallaxData={[
             {
@@ -30,19 +25,15 @@ function App() {
               ],
             },
           ]}
-          style={{
-            position: 'absolute',
-            left: 0,
-            top: 0,
-            width: '100%',
-          }}
+          className="absolute inset-0 w-full"
         >
           <img
-            style={{ width: '100%' }}
-            src='serverlobby.png'
-            alt='background'
+            className="w-full object-cover h-full"
+            src="serverlobby.png"
+            alt="background"
           />
         </Plx>
+        
         <Plx
           parallaxData={[
             {
@@ -57,31 +48,22 @@ function App() {
               ],
             },
           ]}
-          style={{
-            position: 'absolute',
-            left: '35vw',
-            top: '9vw',
-            width: '100%',
-          }}
+          className="absolute left-[50%] top-[10vw] transform -translate-x-1/2 w-full flex justify-center"
         >
           <img
-            style={{
-              width: '30vw',
-            }}
-            src='/serverIcon.png'
-            alt='Goonies'
+            className="w-[30vw] max-w-[300px] min-w-[150px]"
+            src="/serverIcon.png"
+            alt="Server Icon"
           />
         </Plx>
       </div>
 
       <div
+        className="relative overflow-hidden bg-no-repeat bg-cover"
         style={{
-          position: 'relative',
-          overflow: 'hidden',
           backgroundImage: 'url(/background.jpg)',
-          backgroundSize: '100% 60%',
+          backgroundSize: '100% auto',
           backgroundPosition: 'top center',
-          backgroundRepeat: 'no-repeat',
           paddingTop: '100px',
         }}
       >
@@ -94,20 +76,22 @@ function App() {
                 {
                   startValue: 1,
                   endValue: 1.18,
-                  property: '',
+                  property: 'scale',
                 },
               ],
             },
           ]}
-          style={{
-            position: 'relative',
-            width: '100%',
-          }}
+          className="relative w-full"
         >
           <ServerAddress />
         </Plx>
       </div>
-      <div className='mt-auto z-20'>
+      <div>
+      <Stats/>
+      </div>
+
+      {/* Footer */}
+      <div className="mt-auto z-20">
         <Footer />
       </div>
     </div>

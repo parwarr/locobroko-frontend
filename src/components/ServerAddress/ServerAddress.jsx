@@ -4,7 +4,7 @@ import Trailer from '../Trailer/Trailer';
 function ServerAddress() {
   return (
     <div className="min-h-screen flex items-center justify-center flex-col">
-<div className="flex flex-col p-6 md:p-10 text-left max-w-full md:max-w-lg rounded-3xl bg-opacity-70 bg-slate-700 shadow-lg mx-auto">
+<div className="flex flex-col p-6 md:p-10 text-left max-w-full md:max-w-lg rounded-3xl bg-opacity-70 bg-slate-700 shadow-lg mx-auto ">
   <span className="bowlby-one-sc-regular text-4xl md:text-6xl text-center text-white">
     LocoBroko
   </span>
