@@ -27,29 +27,30 @@ function Stats() {
             imageSrc: '/RAM.webp',
         },
         {
-            title: '...',
+            title: 'N/A',
             description: '',
             imageSrc: '/serverIcon.png',
         },
         {
-            title: serverData.online,
+            // title: serverData.online ? serverData.online : 'N/A',
+            title: 'N/A',
             description: '',
-            imageSrc: serverData.favicon,
+            imageSrc: serverData.favicon ? '/serverIcon.png' : 'N/A',
         },
         {
-            title: '30',
+            title: 'N/A',
             description: 'Ø Spieler letzte 30 Tage',
             imageSrc: '/shield.webp',
         },
         {
-            title: serverData.playerCount,
+            title: serverData.playerCount  ? serverData.playerCount : 'N/A',
             description: 'Spieler Online',
             imageSrc: '/shieldv2.webp',
         },
         {
-            title: serverData.server.replace(/^[^A-Z]+/, ""),
+            title: serverData.server  ? serverData.server.replace(/^[^A-Z]+/, "") : 'N/A',
             description: 'Server Status',
-            imageSrc: serverData.favicon, 
+            imageSrc: serverData.favicon  ? '/serverIcon.png' : 'N/A', 
         },
     ];
 
@@ -58,11 +59,11 @@ function Stats() {
             <h2 className="text-center text-3xl font-extrabold text-white mb-10">
                 Statistiken
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
                 {statsData.map((stat, index) => (
                     <div
                         key={index}
-                        className="relative p-6 rounded-lg shadow-lg text-white text-center bg-opacity-70"
+                        className="relative p-6 rounded-3xl shadow-lg text-white text-center bg-opacity-70 border-gray-400 border-4"
                     >
                         <img
                             src={stat.imageSrc}

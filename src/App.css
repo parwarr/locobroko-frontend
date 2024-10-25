@@ -9,16 +9,12 @@ body {
   font-family: 'Carter One', sans-serif !important; 
   text-align: center;
   background-color: #1f1e1e;
+  background-image: url('bg6.webp');
+  background-size: auto;
+  background-blend-mode: soft-light;
   color: whitesmoke;
   height: 200vh;
-  background-image: url(mockaroon-bg.png);
   -webkit-font-smoothing: antialiased;
-}
-
-.bowlby-one-sc-regular {
-  font-family: 'Bowlby One SC', sans-serif;
-  font-weight: 800;
-  font-style: normal;
 }
 
 .carter-one-regular {

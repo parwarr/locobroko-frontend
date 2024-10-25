@@ -7,9 +7,8 @@ import Stats from './components/Stats/Stats';
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* <Header /> */}
 
-      <div className="relative h-[100vh] overflow-hidden">
+      <div className="relative h-[100vh] overflow-hidden border-b-4 border-gray-400">
         <Plx
           parallaxData={[
             {
@@ -27,8 +26,8 @@ function App() {
           className="absolute inset-0 w-full"
         >
           <img
-            className="w-full object-cover h-full"
-            src="serverlobby.png"
+            className="w-full object-cover h-full blur-md"
+            src="bg5.webp"
             alt="background"
           />
         </Plx>
@@ -50,22 +49,14 @@ function App() {
           className="absolute left-[50%] top-[10vw] transform -translate-x-1/2 w-full flex justify-center"
         >
           <img
-            className="w-[30vw] max-w-[300px] min-w-[150px]"
+            className=""
             src="/serverIcon.png"
             alt="Server Icon"
           />
         </Plx>
       </div>
 
-      <div
-        className="relative overflow-hidden bg-no-repeat bg-cover"
-        style={{
-          backgroundImage: 'url(/background.jpg)',
-          backgroundSize: '100% auto',
-          backgroundPosition: 'top center',
-          paddingTop: '100px',
-        }}
-      >
+      <div>
         <Plx
           parallaxData={[
             {
@@ -89,7 +80,6 @@ function App() {
       <Stats/>
       </div>
 
-      {/* Footer */}
       <div className="mt-auto z-20">
         <Footer />
       </div>
