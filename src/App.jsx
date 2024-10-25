@@ -1,6 +1,5 @@
 import './App.css';
 import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
 import Plx from 'react-plx';
 import ServerAddress from './components/ServerAddress/ServerAddress';
 import Stats from './components/Stats/Stats';

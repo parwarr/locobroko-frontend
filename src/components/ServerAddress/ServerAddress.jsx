@@ -1,5 +1,7 @@
 import { FaDiscord, FaArrowRight, FaCopy, FaYoutube } from 'react-icons/fa'; 
 import Trailer from '../Trailer/Trailer';
+import './ServerAddress.css'
+
 
 function ServerAddress() {
   return (
@@ -17,11 +19,10 @@ function ServerAddress() {
   <span className="text-gray-100 text-sm md:text-base font-extrabold text-center">
     SERVERADRESSE
   </span>
-
   <div className="flex justify-center mt-4">
     <div
       onClick={() => navigator.clipboard.writeText('LocoBroko.net')}
-      className="flex items-center justify-between border border-gray-400 shadow-md rounded-md w-full md:w-52 p-2 text-sm md:text-base font-bold text-gray-200 bg-gray-800 cursor-pointer hover:bg-gray-700 transition-colors"
+      className="relative flex items-center justify-between border border-gray-400 rounded-md w-full md:w-52 p-2 text-sm md:text-base font-bold text-gray-200 bg-gray-800 cursor-pointer transition-all duration-300 hover:bg-gray-700 hover-neon"
     >
       <span className="text-center">LocoBroko.net</span>
       <FaCopy className="text-white ml-2" />

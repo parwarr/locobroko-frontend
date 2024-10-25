@@ -47,7 +47,7 @@ function Stats() {
             imageSrc: '/shieldv2.webp',
         },
         {
-            title: serverData.server,
+            title: serverData.server.replace(/^[^A-Z]+/, ""),
             description: 'Server Status',
             imageSrc: serverData.favicon, 
         },
