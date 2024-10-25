@@ -27,7 +27,7 @@ function App() {
         >
           <img
             className="w-full object-cover h-full blur-md"
-            src="bg5.webp"
+            src="title.png"
             alt="background"
           />
         </Plx>
@@ -56,25 +56,8 @@ function App() {
         </Plx>
       </div>
 
-      <div>
-        <Plx
-          parallaxData={[
-            {
-              start: 400,
-              end: 800,
-              properties: [
-                {
-                  startValue: 1,
-                  endValue: 1.18,
-                  property: 'scale',
-                },
-              ],
-            },
-          ]}
-          className="relative w-full"
-        >
+      <div  className="relative w-full">
           <ServerAddress />
-        </Plx>
       </div>
       <div>
       <Stats/>

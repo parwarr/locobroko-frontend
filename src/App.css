@@ -5,13 +5,17 @@ body {
   overscroll-behavior: none;
 }
 
+html { 
+  background: url('finalbg.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   font-family: 'Carter One', sans-serif !important; 
   text-align: center;
-  background-color: #1f1e1e;
-  background-image: url('bg6.webp');
-  background-size: auto;
-  background-blend-mode: soft-light;
   color: whitesmoke;
   height: 200vh;
   -webkit-font-smoothing: antialiased;

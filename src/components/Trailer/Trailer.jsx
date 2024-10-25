@@ -1,6 +1,6 @@
 const Trailer = () => {
   return (
-    <div className='rounded-lg overflow-hidden border-2 shadow-lg max-w-2xl mx-auto my-5'>
+    <div className='rounded-lg overflow-hidden border-4 border-gray-400 shadow-lg max-w-2xl mx-auto my-5'>
       <iframe
         className='w-full h-64'
         src='https://www.youtube.com/embed/o7-0gygCj9Q'
