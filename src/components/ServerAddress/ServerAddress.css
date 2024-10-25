@@ -1,4 +1,4 @@
 .hover-neon:hover {
-  box-shadow: 0 0 10px #fffb2d, 0 0 20px #f1ff2c, 0 0 30px #d9ff00;
+  box-shadow: 0 0 10px #3614f5, 0 0 20px #002fff, 0 0 30px #6b8cff;
   transition: box-shadow 0.3s ease-in-out;
 }

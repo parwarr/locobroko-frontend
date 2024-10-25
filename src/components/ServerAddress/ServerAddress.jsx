@@ -22,7 +22,7 @@ function ServerAddress() {
   <div className="flex justify-center mt-4">
     <div
       onClick={() => navigator.clipboard.writeText('LocoBroko.net')}
-      className="relative flex items-center justify-between border border-gray-400 rounded-md w-full md:w-52 p-2 text-sm md:text-base font-bold text-gray-200 bg-gray-800 cursor-pointer transition-all duration-300 hover:bg-gray-700 hover-neon"
+      className="relative flex items-center justify-between border border-gray-400 rounded-md w-full md:w-52 p-2 text-sm md:text-base font-bold text-gray-200 bg-gray-600 cursor-pointer transition-all duration-300 hover:bg-gray-700 hover-neon"
     >
       <span className="text-center">LocoBroko.net</span>
       <FaCopy className="text-white ml-2" />
@@ -47,7 +47,7 @@ function ServerAddress() {
             href="https://www.youtube.com/channel/UCXTBHWIiYGXib9RZ5AwdHwA"
             className="flex items-center justify-center bg-red-700 bg-opacity-80 text-white text-lg md:text-xl py-2 px-4 md:px-6 rounded-lg shadow-lg hover:scale-105 hover:bg-red-600 transition-transform"
           >
-            <FaYoutube className="mr-2" /> Youtube
+            <FaYoutube className="mr-2" /> YouTube
             <FaArrowRight className="ml-2" />
           </a>
         </div>
