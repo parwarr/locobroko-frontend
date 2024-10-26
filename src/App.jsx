@@ -1,4 +1,5 @@
 import './App.css';
+import './index.css'
 import Footer from './components/Footer/Footer';
 import Plx from 'react-plx';
 import ServerAddress from './components/ServerAddress/ServerAddress';
