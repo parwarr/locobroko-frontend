@@ -6,7 +6,7 @@ function Footer() {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start">
         
         <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
-          <img src="/serverIcon.png" alt="Logo" className="w-32 mb-4" /> 
+          <img src="/images/serverIcon.png" alt="Logo" loading="lazy"  className="w-32 mb-4" /> 
         </div>
 
         <div className="text-center md:text-left mb-6 md:mb-0">

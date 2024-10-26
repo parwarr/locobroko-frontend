@@ -24,33 +24,33 @@ function Stats() {
         {
             title: '16 GB',
             description: 'Arbeitsspeicher',
-            imageSrc: '/RAM.webp',
+            imageSrc: '/images/RAM.webp',
         },
         {
             title: 'N/A',
             description: '',
-            imageSrc: '/serverIcon.png',
+            imageSrc: '/images/serverIcon.png',
         },
         {
             // title: serverData.online ? serverData.online : 'N/A',
             title: 'N/A',
             description: '',
-            imageSrc: serverData.favicon ? '/serverIcon.png' : 'N/A',
+            imageSrc: serverData.favicon ? '/images/serverIcon.png' : 'N/A',
         },
         {
             title: 'N/A',
             description: 'Ø Spieler letzte 30 Tage',
-            imageSrc: '/shield.webp',
+            imageSrc: '/images/shield.webp',
         },
         {
             title: serverData.playerCount  ? serverData.playerCount : 'N/A',
             description: 'Spieler Online',
-            imageSrc: '/shieldv2.webp',
+            imageSrc: '/images/shieldv2.webp',
         },
         {
             title: serverData.server  ? serverData.server.replace(/^[^A-Z]+/, "") : 'N/A',
             description: 'Server Status',
-            imageSrc: serverData.favicon  ? '/serverIcon.png' : 'N/A', 
+            imageSrc: serverData.favicon  ? '/images/serverIcon.png' : 'N/A', 
         },
     ];
 
@@ -69,6 +69,7 @@ function Stats() {
                             src={stat.imageSrc}
                             alt={stat.title}
                             className="mx-auto mb-4 w-full h-full object-cover rounded-3xl"
+                            loading='lazy'
                         />
                         
                         <div

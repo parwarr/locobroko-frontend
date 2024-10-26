@@ -28,8 +28,9 @@ function App() {
         >
           <img
             className="w-full object-cover h-full blur-md"
-            src="title.png"
+            src="/images/title.png"
             alt="background"
+            loading="lazy" 
           />
         </Plx>
         
@@ -51,8 +52,9 @@ function App() {
         >
           <img
             className=""
-            src="/serverIcon.png"
+            src="/images/serverIcon.png"
             alt="Server Icon"
+            loading="lazy" 
           />
         </Plx>
       </div>
