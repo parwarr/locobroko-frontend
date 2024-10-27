@@ -13,16 +13,16 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000); 
+    }, 3000); 
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="relative h-[100vh] overflow-hidden border-b-4 border-gray-400">
-        {isLoading && <Spinner />}
+      {isLoading && <Spinner />}
         {!isLoading && (
+      <div className="relative h-[100vh] overflow-hidden border-b-4 border-gray-400">
           <>
             <Plx
               parallaxData={[
@@ -82,8 +82,9 @@ function App() {
               </div>
             </Plx>
           </>
+        </div>
         )}
-      </div>
+  
       <div className="relative w-full">
         {!isLoading && <ServerAddress />}
       </div>
