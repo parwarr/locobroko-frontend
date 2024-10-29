@@ -1,98 +1,79 @@
-import React, { useState, useEffect } from 'react';
 import './App.css';
 import './index.css';
 import Footer from './components/Footer/Footer';
-import Plx from 'react-plx';
 import ServerAddress from './components/ServerAddress/ServerAddress';
 import Stats from './components/Stats/Stats';
-import Spinner from './components/Spinner/Spinner';
+import Plx from 'react-plx';
+
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 3000); 
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="flex flex-col min-h-screen">
-      {isLoading && <Spinner />}
-        {!isLoading && (
-      <div className="relative h-[100vh] overflow-hidden border-b-4 border-gray-400">
-          <>
-            <Plx
-              parallaxData={[
+        <div
+          className="relative flex items-center justify-center h-[100vh] overflow-hidden border-b-4 border-slate-50"
+        >
+          <Plx
+          parallaxData={[
+            {
+              start: 0,
+              end: 400,
+              properties: [
                 {
-                  start: 0,
-                  end: 400,
-                  properties: [
-                    {
-                      startValue: 1,
-                      endValue: 1.18,
-                      property: 'scale',
-                    },
-                  ],
+                  startValue: 1,
+                  endValue: 1.18,
+                  property: 'scale',
                 },
-              ]}
-              className="absolute inset-0 w-full"
-            >
-              <picture>
-                <source media="(min-width: 1024px)" srcSet="/images/title.png" />
-                <source media="(min-width: 640px)" srcSet="/images/title.png" />
-                <img
-                  className="w-full object-cover h-full blur-md"
-                  src="/images/title.png"
-                  alt="background"
-                  loading="lazy"
-                />
-              </picture>
-            </Plx>
+              ],
+            },
+          ]}
+          className="absolute inset-0 w-full"
+        >
+            <img
+              className="w-full object-cover h-full blur-sm"
+              src="/images/title-medium.png"
+              alt="background"
+              loading="lazy"
+            />
+        </Plx>
 
-            <Plx
-              parallaxData={[
+        <Plx
+          parallaxData={[
+            {
+              start: 0,
+              end: 400,
+              properties: [
                 {
-                  start: 0,
-                  end: 400,
-                  properties: [
-                    {
-                      startValue: 1,
-                      endValue: 0,
-                      property: 'opacity',
-                    },
-                  ],
+                  startValue: 1,
+                  endValue: 0,
+                  property: 'opacity',
                 },
-              ]}
-              className="flex items-center justify-center w-full h-full"
-            >
-              <div className="w-auto max-w-[500px] m-auto">
-                <picture className="block w-full h-auto">
-                  <source media="(min-width: 1024px)" srcSet="/images/serverIcon.png" />
-                  <source media="(min-width: 640px)" srcSet="/images/serverIcon.png" />
-                  <img
-                    className="w-full h-auto"
-                    src="/images/serverIcon.png"
-                    alt="Server Icon"
-                    loading="lazy"
-                  />
-                </picture>
-              </div>
-            </Plx>
-          </>
+              ],
+            },
+          ]}
+          className="flex items-center justify-center w-full h-full"
+        >
+          <div className="w-auto max-w-[500px] m-auto">
+        
+              <img
+                className="w-full h-auto"
+                src="/images/serverIcon.png"
+                alt="Server Icon"
+                loading="lazy"
+              />
+          </div>
+        </Plx>
         </div>
-        )}
-  
+        
+
+
       <div className="relative w-full">
-        {!isLoading && <ServerAddress />}
+        { <ServerAddress />}
       </div>
       <div>
-        {!isLoading && <Stats />}
+        { <Stats />}
       </div>
       <div className="mt-auto z-20">
-        {!isLoading && <Footer />}
+        { <Footer />}
       </div>
     </div>
   );

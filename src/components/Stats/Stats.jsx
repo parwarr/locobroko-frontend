@@ -63,7 +63,7 @@ function Stats() {
                 {statsData.map((stat, index) => (
                     <div
                         key={index}
-                        className="relative p-6 rounded-3xl shadow-lg text-white text-center bg-opacity-70 border-gray-400 border-4"
+                        className="relative p-6 rounded-3xl shadow-lg text-white text-center  border-slate-50  bg-opacity-80 bg-gray-800 border-4"
                     >
                         <img
                             src={stat.imageSrc}
