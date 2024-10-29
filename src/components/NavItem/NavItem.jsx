@@ -1,8 +1,13 @@
-const NavItem = (props) => {
+const NavItem = ({ title, href, color, target, onClick }) => {
   return (
-    <div className={`hover:text-yellow-500 text-base px-5 uppercase ${props.color || 'text-white'} ${props.underline || ''}`}>
-      <p>{props.title}</p>
-    </div>
+    <a
+      href={href}
+      {...(target ? { target } : {})}
+      onClick={onClick} 
+      className={`hover:text-yellow-500 text-base px-5 uppercase ${color || 'text-white'}`}
+    >
+      {title}
+    </a>
   );
 };
 
