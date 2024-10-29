@@ -2,7 +2,7 @@ import { FaDiscord, FaYoutube } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-8 mt-10 border-t-4 border-gray-400">
+    <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-8 mt-10 border-t-4 border-slate-50">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start">
         
         <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
