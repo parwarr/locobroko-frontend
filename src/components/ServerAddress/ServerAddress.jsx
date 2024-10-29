@@ -1,4 +1,4 @@
-import { FaDiscord, FaArrowRight, FaCopy, FaYoutube } from 'react-icons/fa'; 
+import { FaDiscord, FaCopy, FaYoutube } from 'react-icons/fa'; 
 import Trailer from '../Trailer/Trailer';
 import './ServerAddress.css';
 
@@ -38,7 +38,7 @@ function ServerAddress() {
           </div>
         </div>
 
-        <div className="flex flex-col p-6 sm:p-8 md:p-10 text-left max-w-full md:max-w-lg rounded-3xl bg-opacity-50 bg-green-700 shadow-2xl border-4 border-slate-50">
+        <div className="flex flex-col p-6 sm:p-8 md:p-10 text-left max-w-full md:max-w-lg rounded-3xl bg-opacity-50 bg-yellow-600 shadow-2xl border-4 border-slate-50">
           <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-white font-bold">
             Join Our Community
           </span>
