@@ -1,4 +1,5 @@
 import { FaDiscord, FaYoutube } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -35,6 +36,26 @@ function Footer() {
               </a>
             </li>
           </ul>
+        </div>
+      </div>
+      <div className='flex flex-row items-center justify-center gap-5 p-2'>
+        <div flex items-center>
+        <Link to="/agb">AGB</Link>
+        </div>
+        <div>
+        <a href="https://www.youtube.com/channel/UCXTBHWIiYGXib9RZ5AwdHwA" className="flex items-center">
+                <span>Datenschutz</span>
+              </a>
+        </div>
+        <div>
+        <a href="https://www.youtube.com/channel/UCXTBHWIiYGXib9RZ5AwdHwA" className="flex items-center">
+                <span>Impressum</span>
+              </a>
+        </div>
+        <div>
+        <a href="https://www.youtube.com/channel/UCXTBHWIiYGXib9RZ5AwdHwA" className="flex items-center">
+                <span>Regelwerk</span>
+              </a>
         </div>
       </div>
     </footer>

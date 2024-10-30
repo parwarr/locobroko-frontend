@@ -1,29 +1,21 @@
-import './App.css';
-import './index.css';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import ServerAddress from './components/ServerAddress/ServerAddress';
-import Stats from './components/Stats/Stats';
-import StartPage from './components/StartPage/StartPage';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import FooterPages from "./pages/FooterPages/FooterPages";
+import NoPage from "./pages/NoPage/NoPage";
 
-function App() {
+export default function App() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <div id="startPage">
-        <StartPage />
-      </div>
-      <div id="serverAddress" className="relative w-full">
-        <ServerAddress />
-      </div>
-      <div id="stats">
-        <Stats />
-      </div>
-      <div id="footer" className="mt-auto z-20">
-        <Footer />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/agb" element={<FooterPages />} />
+        
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

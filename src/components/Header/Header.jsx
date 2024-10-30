@@ -43,7 +43,7 @@ const Header = () => {
       </nav>
 
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-gradient-to-br from-gray-900 to-gray-800 bg-opacity-70 text-white flex flex-col items-center space-y-8 pt-10 z-40">
+        <div className="fixed inset-0  bg-gradient-to-br from-gray-900 to-gray-800 bg-opacity-70 text-white flex flex-col items-center space-y-8 pt-40 z-40  no-doc-scroll">
           <button
             className="absolute top-5 right-5 text-3xl text-white"
             onClick={toggleMobileMenu}
